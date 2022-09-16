@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Registration Form</title>
+        <style>
+            body{
+                background-color:rgb(69, 66, 38);
+                font-family:'Arial';
+                text-align: left;
+            
+            }
+            form{
+                background-color:rgb(97, 195, 247);
+                max-width:500px;
+                padding:30px;
+                margin-left: 500px;
+                margin-right: 200px;
+                
+            }
+        </style>
+    </head>
+    <body >
+        <h1>Details</h1>
+        <form id="form">
+            <div class="form-control">
+                <label for="Name" id="label-name">Name:</label>
+                <input type="text"id="name"placeholder="Enter your name">
+            </div><br>
+
+            <div class="form-control">
+                <label for="Email">Email:</label>
+                <input type="text"id="Email"placeholder="Enter your Email">
+
+            </div><br>
+
+            <div class="form-control">
+                <label for="contact no">Contact No:</label>
+                <input type="text"id="contact"placeholder="Enter your Mobile no">
+            </div><br>
+
+            <div class="form-control">
+                <label for="City">City:</label>
+                <input type="text"id="City"placeholder="Enter your city">
+            </div><br>
+
+            <div class="form-control">
+                <label for="state">state:</label>
+                <input type="text"id="state"placeholder="Enter your state">
+            </div><br>
+
+            <div class="form-control">
+                <label for="Country">Country:</label>
+                <input type="text"id="Country"placeholder="Enter your country">
+            </div><br>
+
+            <button type="submit" value="submit">Submit</button>
+
+
+        </form>
+    </body>
+</html>
