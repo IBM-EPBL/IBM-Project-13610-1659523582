@@ -1,0 +1,1 @@
+docker tag hello-world icr.io/jobspace/hello:v1
