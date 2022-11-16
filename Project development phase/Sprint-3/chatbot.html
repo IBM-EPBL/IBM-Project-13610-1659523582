@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+button {
+  background-color: dodgerblue;
+}
+p {
+  text-align: center;
+}
+</style>
+<p><button onclick="myFunction()">Click here to wake me up</button></p>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var text;
+  var ms = prompt("Ask me anything.");
+  switch(ms) {
+    case "hello":
+      text = "HI, What do you want to ask me?";
+      break;
+    case "how are you":
+      text = "I am fine. Hope you are fine too.";
+      break;
+    case "hi":
+      text = "Yes. What do you want to ask?";
+      break;
+    case "hey":
+      text = "Yes. What do you want to ask?";
+      break;      
+    case "yes":
+      text = "Okay. So what do you want to ask?";
+      break;
+    case "search":
+      text = '<form action="https://www.google.com/search" target="_blank"><input name="q" size="50" placeholder="type your search term and click enter"></form>';
+      break;
+    case "functions":
+      text = "I can help you to find answers to your questions, I can give the weather report , I can show you the current time";
+      break;      
+    case "weather":
+      text = '<a href="https://www.accuweather.com/en/us/google/94043/weather-forecast/74907_poi" target="_blank">Weather report</a>';
+      break;     
+    case "time":
+      text = new Date().toLocaleTimeString();
+      break;
+    default:
+      text = "I didn't understand that";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script><hr>
+<p>TYPE hello, how are you, hi, hey, yes, search, functions, weather, time etc.</p>
+</body>
+</html>
